@@ -1,4 +1,4 @@
-# Diogo Andrade — personal website
+# personal website
 
 A small, portable static website. No framework, database, account system, or browser-side math compilation. The generated pages work without JavaScript, except for the optional light/dark switch.
 
