@@ -1,0 +1,68 @@
+{
+  "name": "Diogo Andrade",
+  "description": "Machine Learning Researcher working on efficient large language models. Mathematics, publications, and writing.",
+  "url": "",
+  "portrait": "assets/personal.png",
+  "links": [
+    { "label": "GitHub", "url": "https://github.com/diogofd" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/diogo-freire-de-andrade/" }
+  ],
+  "publications": [
+    {
+      "year": "2025",
+      "title": "Higher tensor categories and their extensions: notes from the Scottish Talbot On Algebra and Topology",
+      "authors": "Diogo Andrade, Julia Bierent, Jennifer Brown, et al.",
+      "description": "arXiv preprint · Quantum algebra & category theory",
+      "url": "https://arxiv.org/abs/2509.10636",
+      "linkLabel": "arXiv"
+    },
+    {
+      "year": "2026",
+      "title": "An (∞,1)-category of conically smooth stratified bordisms",
+      "authors": "Diogo Andrade",
+      "description": "Doctoral thesis · Instituto Superior Técnico"
+    }
+  ],
+  "talks": [
+    {
+      "year": "2025",
+      "title": "The bordism (∞,1)-category as a Morita category of stratified spaces",
+      "venue": "Lisbon Young Mathematicians Conference · April 2025",
+      "url": "https://lymc2025.iseg.ulisboa.pt/Book_Of_Abstracts_LYMC2025.pdf#page=11",
+      "abstract": "Joint work in progress with David Ayala and John Francis approaches the bordism (∞,1)-category through a Morita category built from stratified spaces. Exponentiable fibrations and relative functor categories connect geometric bordisms with higher categorical structure. This perspective supplies a foundation for constructing topological quantum field theories via β-factorization homology.",
+      "resources": [{ "label": "Full abstract · Conference booklet", "url": "https://lymc2025.iseg.ulisboa.pt/Book_Of_Abstracts_LYMC2025.pdf#page=11" }]
+    },
+    {
+      "year": "2024",
+      "title": "A combinatorial approach to Morita categories",
+      "venue": "Hodge Club · University of Edinburgh · 15 November 2024",
+      "url": "https://hodge.maths.ed.ac.uk/?page_id=902",
+      "abstract": "A self-contained introduction to Rune Haugseng’s combinatorial construction of higher Morita categories of Eₙ-algebras and their role in topological quantum field theory. The talk introduces non-symmetric ∞-operads and explains Lurie–Dunn additivity, building the background needed to understand these higher algebraic structures.",
+      "resources": [{ "label": "Full abstract · Hodge Club archive", "url": "https://hodge.maths.ed.ac.uk/?page_id=902" }]
+    },
+    {
+      "year": "2024",
+      "title": "TQFTs with defects: from factorization homology to string-nets and quantum computers",
+      "venue": "Lisbon Young Researchers Seminar · Instituto Superior Técnico · 5 July 2024",
+      "url": "https://young.math.tecnico.ulisboa.pt/seminars?id=7271",
+      "resources": [{ "label": "Abstract · Event page", "url": "https://young.math.tecnico.ulisboa.pt/seminars?id=7271" }]
+    },
+    {
+      "year": "2023",
+      "title": "Seminar on ∞-categories",
+      "venue": "Co-organised with John Huerta · Instituto Superior Técnico",
+      "url": "https://diogofd.github.io/Seminar-on-Higher-Categories/",
+      "resources": [
+        { "label": "Notes & slides", "url": "https://diogofd.github.io/Seminar-on-Higher-Categories/lectures/" },
+        { "label": "Seminar website", "url": "https://diogofd.github.io/Seminar-on-Higher-Categories/" }
+      ]
+    }
+  ],
+  "researchVisits": "University of Zurich, with Alberto Cattaneo’s group; University of Edinburgh, with David Jordan and Clark Barwick’s group.",
+  "seminars": "[Reading seminar on TQFTs with defects](https://www.math.tecnico.ulisboa.pt/~jhuerta/) with John Huerta and Roger Picken in 2025.",
+  "training": [
+    { "title": "Spring School on Field Theories and Algebraic Topology", "venue": "Driebergen, near Utrecht · 2022", "url": "https://sites.google.com/view/spring-school-field-topology/homepage" },
+    { "title": "Research School on Bicategories, Categorification and Quantum Theory", "venue": "University of Leeds · 2022", "url": "https://conferences.leeds.ac.uk/bcqt2022/" },
+    { "title": "Thematic Program in Field Theory and Topology", "venue": "University of Notre Dame · 2024", "url": "https://sites.nd.edu/2024cmndthematicprogram/" }
+  ]
+}

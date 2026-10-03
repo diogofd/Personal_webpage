@@ -1,0 +1,65 @@
+@font-face{font-family:Plex;src:url('fonts/ibm-plex-sans-latin-400-normal.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Plex;src:url('fonts/ibm-plex-sans-latin-500-normal.woff2') format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:Plex;src:url('fonts/ibm-plex-sans-latin-600-normal.woff2') format('woff2');font-weight:600;font-display:swap}
+:root{color-scheme:dark;--bg:#17191c;--ink:#eceef0;--muted:#a9afb8;--rule:#363a41;--accent:#e69c97}
+:root[data-theme=light]{color-scheme:light;--bg:#fff;--ink:#24272b;--muted:#62676e;--rule:#e6e8eb;--accent:#8f2424}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.7 Plex,Arial,sans-serif}
+.wrap{max-width:830px;padding:0 44px;margin:auto}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:4px}
+header{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:29px 0;border-bottom:1px solid var(--rule)}
+.brand{font-size:.875rem;font-weight:600;letter-spacing:-.3px}
+nav{display:flex;align-items:center;gap:23px;font-size:.875rem}
+button{font:inherit;color:var(--muted);background:none;border:0;border-left:1px solid var(--rule);padding:0 0 0 19px;cursor:pointer}
+.intro{display:grid;grid-template-columns:minmax(0,1fr) 180px;column-gap:38px;row-gap:20px;padding:48px 0 40px;align-items:start}
+.identity{grid-column:1;grid-row:1}
+h1{font:600 2.125rem/1.25 Plex,Arial,sans-serif;letter-spacing:-.8px;margin:0}
+.bio{grid-column:1;grid-row:2}
+.portrait{grid-column:2;grid-row:1 / span 2;width:180px;height:180px;object-fit:cover;border-radius:5px}
+p{margin:0 0 14px}
+.bio p+p{color:var(--muted)}
+.bio a,.more a{color:var(--accent);text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:3px}
+.social{display:flex;flex-wrap:wrap;gap:24px;margin-top:23px;font-size:.875rem;color:var(--accent)}
+.section-title{border-top:1px solid var(--rule);padding:17px 0 4px}
+h2{font:600 1.125rem/1.4 Plex,Arial,sans-serif;letter-spacing:-.4px;margin:0}
+h3{font:500 1rem/1.5 Plex,Arial,sans-serif;letter-spacing:-.15px;margin:0 0 9px}
+.paper,.activity{display:grid;grid-template-columns:85px minmax(0,1fr);gap:20px;padding:24px 0;border-bottom:1px solid var(--rule)}
+.year{font-size:.8rem;color:var(--muted);padding-top:3px;font-variant-numeric:tabular-nums}
+.authors{font-size:.875rem;margin-bottom:3px;color:var(--muted)}
+.metadata{font-size:.8rem;margin-bottom:4px;color:var(--muted)}
+.resources{display:flex;flex-wrap:wrap;gap:20px}
+.resource{font-size:.8rem;color:var(--accent);text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:3px}
+.activities{padding-top:33px}
+.activity{grid-template-columns:50px minmax(0,1fr);padding:18px 0 0;border:0}
+.activity h3{font-size:.95rem;margin-bottom:3px}
+.activity>div>p{font-size:.875rem;color:var(--muted)}
+.abstract{margin:5px 0 13px}
+.abstract summary{width:fit-content;color:var(--muted);font-size:.8rem;opacity:.85;cursor:pointer;padding:2px 0}
+.abstract summary::marker{font-size:.6rem}
+.abstract summary:hover,.abstract[open] summary{color:var(--accent);opacity:1}
+.abstract-copy{padding:12px 0 3px}
+.abstract-copy p{font:italic 1rem/1.75 Georgia,serif;color:var(--ink)}
+.more-phd{margin:12px 0 30px 70px;font-size:.875rem}
+.more-phd>summary{color:var(--accent);cursor:pointer}
+.more{color:var(--muted);padding-top:15px}
+.more strong{font-weight:500;color:var(--ink)}
+.training{padding-left:19px;margin:9px 0 0}
+.training li{margin-bottom:8px;padding-left:3px}
+footer{border-top:1px solid var(--rule);padding:22px 0 27px;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:.8rem}
+.essay{padding:36px 0 44px}
+.back{font-size:.875rem;color:var(--muted)}
+.essay-heading{padding:39px 0 30px;border-bottom:1px solid var(--rule);margin-bottom:32px}
+.essay-heading h1{margin:12px 0 20px;max-width:670px}
+.byline{color:var(--muted);font-size:.875rem;margin:0}
+.prose{font:400 1.125rem/1.8 Georgia,'Times New Roman',serif;overflow-wrap:break-word}
+.prose h2{font-size:1.25rem;font-weight:500;margin:34px 0 16px}
+.prose h3{margin:30px 0 14px;font-size:1.125rem}
+.prose p{margin-bottom:21px}
+.prose a{color:var(--accent);text-decoration:underline}
+.prose .katex{font-size:1.03em}
+.prose .katex-display{max-width:100%;overflow-x:auto;overflow-y:hidden;padding:8px 0;margin:24px 0}
+eqn{display:block}
+.original-note{font-size:.875rem;color:var(--muted);border-top:1px solid var(--rule);padding-top:22px;margin-top:37px}
+@media(max-width:650px){.wrap{padding:0 23px}header{flex-wrap:wrap;gap:12px;padding:23px 0}nav{gap:17px}.intro{grid-template-columns:minmax(0,1fr) 95px;column-gap:17px;row-gap:23px;padding:34px 0}.identity h1{font-size:1.8125rem}.portrait{width:95px;height:95px;grid-row:1}.bio{grid-column:1 / -1;grid-row:2}.paper,.activity{grid-template-columns:40px minmax(0,1fr);gap:13px}.more-phd{margin-left:53px}.essay-heading h1{font-size:1.8125rem}.prose{font-size:1rem}}
+@media(pointer:coarse){button,nav a,.social a{min-height:44px;display:inline-flex;align-items:center}.abstract summary,.more-phd>summary{min-height:44px}}

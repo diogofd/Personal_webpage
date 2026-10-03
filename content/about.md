@@ -1,0 +1,7 @@
+I am a Machine Learning Researcher at [Multiverse Computing](https://multiversecomputing.com/), working on improving the efficiency of modern large language models. I am working hard on pushing the limits of distillation and hybrid/linear forms of attention.
+
+Before that, I completed my PhD in mathematics at [Instituto Superior Técnico](https://tecnico.ulisboa.pt/en/), advised by [John Huerta](https://www.math.tecnico.ulisboa.pt/~jhuerta/) and [Pedro Boavida de Brito](https://www.math.tecnico.ulisboa.pt/~pbrito/). My research focused on higher categories, stratified bordisms, and topological field theories with defects.
+
+Before that, I completed my master’s in pure mathematics at [Instituto Superior Técnico](https://tecnico.ulisboa.pt/en/), where I received a Diploma of Academic Excellence. I worked on string-nets and tube categories, advised by [John Huerta](https://www.math.tecnico.ulisboa.pt/~jhuerta/) and [Roger Picken](https://www.math.tecnico.ulisboa.pt/~rpicken/).
+
+Before that even, I did my bachelor’s in Applied Mathematics & Computation at [Instituto Superior Técnico](https://tecnico.ulisboa.pt/en/).
