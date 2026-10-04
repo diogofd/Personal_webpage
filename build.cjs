@@ -28,11 +28,15 @@ function page(title, description, content, prefix = './', route = '') {
     '</a><nav aria-label="Main navigation"><a href="' + prefix + '#writing">Writing</a><a href="' + prefix + '#papers">Papers</a><button type="button" data-theme-toggle aria-label="Switch to light background">Light</button></nav></header>' + content +
     '<footer><span>' + escape(site.name) + '</span><span>© ' + new Date().getUTCFullYear() + '</span></footer></div></body></html>\n';
 }
+// This is generated output only; never remove the source Markdown files.
+fs.rmSync(path.join(out, 'writing'), { recursive: true, force: true });
 const essays = fs.readdirSync(path.join(__dirname, 'content/writing')).filter(f => f.endsWith('.md')).map(file => {
   const text = read('content/writing/' + file);
   const match = text.match(/^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/);
   if (!match) throw new Error(file + ': add JSON metadata between --- lines.');
   const meta = JSON.parse(match[1]);
+  if (meta.draft !== undefined && typeof meta.draft !== 'boolean') throw new Error(file + ': draft must be true or false, without quotes.');
+  if (meta.draft === true) return null;
   const slug = file.slice(0, -3);
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) throw new Error('Use a simple lowercase filename for essays.');
   if (!/^\d{4}-\d{2}-\d{2}$/.test(meta.date) || Number.isNaN(Date.parse(meta.date))) throw new Error('Use an ISO date in ' + file);
@@ -43,7 +47,7 @@ const essays = fs.readdirSync(path.join(__dirname, 'content/writing')).filter(f 
     '<main class="essay"><a class="back" href="../../">Back to home</a><div class="essay-heading"><p class="metadata">' + escape(date) + ' · Mathematics</p><h1>' + escape(meta.title) + '</h1><p class="byline">' + escape(site.name) + '</p></div><article class="prose">' + body + '</article>' +
     (meta.note ? '<p class="original-note">' + escape(meta.note) + '</p>' : '') + '</main>', '../../', 'writing/' + slug + '/'));
   return { ...meta, slug };
-}).sort((a,b) => b.date.localeCompare(a.date));
+}).filter(Boolean).sort((a,b) => b.date.localeCompare(a.date));
 const writing = essays.map(e => '<article class="paper"><div class="year">' + escape(e.date.slice(0,4)) + '</div><div><h3><a href="writing/' + e.slug + '/">' + escape(e.title) + '</a></h3><p class="authors">' + escape(e.summary) + '</p><p class="metadata">' + escape(e.context || '') + '</p><a class="resource" href="writing/' + e.slug + '/">Read essay</a></div></article>').join('');
 const publications = site.publications.map(p => '<article class="paper"><div class="year">' + escape(p.year) + '</div><div><h3>' + link(p.title,p.url) + '</h3><p class="authors">' + escape(p.authors) + '</p><p class="metadata">' + escape(p.description) + '</p>' + (p.url ? link(p.linkLabel || 'Read',p.url,'resource') : '') + '</div></article>').join('');
 const talks = site.talks.map(t => {

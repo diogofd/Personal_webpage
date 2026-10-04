@@ -6,6 +6,7 @@
   "scripts": {
     "build": "node build.cjs",
     "preview": "node preview.cjs",
-    "check": "node check.cjs"
+    "check": "node check.cjs",
+    "dev": "node dev.cjs"
   }
 }

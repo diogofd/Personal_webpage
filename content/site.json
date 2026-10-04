@@ -1,11 +1,11 @@
 {
   "name": "Diogo Andrade",
   "description": "Machine Learning Researcher working on efficient large language models. Mathematics, publications, and writing.",
-  "url": "",
+  "url": "https://diogofandrade.com",
   "portrait": "assets/personal.png",
   "links": [
     { "label": "GitHub", "url": "https://github.com/diogofd" },
-    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/diogo-freire-de-andrade/" }
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/diogo-freire-de-andrade/" },{"label": "Email", "url": "mailto:diogomariafa@hotmail.com"}
   ],
   "publications": [
     {

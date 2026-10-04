@@ -1,4 +1,4 @@
-I am a Machine Learning Researcher at [Multiverse Computing](https://multiversecomputing.com/), working on improving the efficiency of modern large language models. I am working hard on pushing the limits of distillation and hybrid/linear forms of attention.
+Hi! I am Diogo, a Machine Learning at [Multiverse Computing](https://multiversecomputing.com/)'s research group, where I am working on improving the efficiency of modern large language models. I am working hard on pushing the limits of distillation and hybrid/linear forms of attention.  Specifically interested in pushing the limits of any various forms of distillation and hybrid/linear forms of attention. Lately I have also become interested in improving mid-training efficiency & quality by way of clever and improved data-mixing strategies.
 
 Before that, I completed my PhD in mathematics at [Instituto Superior Técnico](https://tecnico.ulisboa.pt/en/), advised by [John Huerta](https://www.math.tecnico.ulisboa.pt/~jhuerta/) and [Pedro Boavida de Brito](https://www.math.tecnico.ulisboa.pt/~pbrito/). My research focused on higher categories, stratified bordisms, and topological field theories with defects.
 
