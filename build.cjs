@@ -1,14 +1,17 @@
 // Content lives in content/. This small script produces ordinary static HTML.
 const fs = require('node:fs');
 const path = require('node:path');
-const katex = require('./vendor/katex.cjs');
-const markdown = require('./vendor/markdown-it.cjs')({ html: false, linkify: true });
-markdown.use(require('./vendor/texmath.cjs'), {
-  engine: katex, delimiters: 'dollars',
-  katexOptions: { throwOnError: true, trust: false }
-});
+const markdown = require('./markdown.cjs');
 const read = file => fs.readFileSync(path.join(__dirname, file), 'utf8');
 const site = JSON.parse(read('content/site.json'));
+const palette = JSON.parse(read('content/endmarks.json'));
+if (!Array.isArray(palette.groups)) throw new Error('endmarks.json: add a groups array.');
+const endmarks = palette.groups.flatMap(group => {
+  if (typeof group.name !== 'string' || typeof group.symbols !== 'string') throw new Error('endmarks.json: each group needs a name and symbols string.');
+  return group.symbols.trim().split(/\s+/).filter(Boolean);
+});
+if (!endmarks.length || endmarks.some(mark => [...mark].length !== 1 || /[\p{C}\p{M}]/u.test(mark))) throw new Error('endmarks.json: use visible, single-character symbols separated by spaces.');
+if (new Set(endmarks).size !== endmarks.length) throw new Error('endmarks.json: remove duplicate symbols.');
 const out = path.join(__dirname, 'dist');
 const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function link(title, url, className = '') {
@@ -24,9 +27,9 @@ function write(file, text) {
 function page(title, description, content, prefix = './', route = '') {
   const canonical = site.url ? '<link rel="canonical" href="' + escape(new URL(route, site.url.endsWith('/') ? site.url : site.url + '/').href) + '">' : '';
   return '<!doctype html>\n<html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>' + escape(title) + '</title><meta name="description" content="' + escape(description) + '">' + canonical +
-    '<link rel="icon" type="image/svg+xml" href="' + prefix + 'assets/favicon.svg"><link rel="stylesheet" href="' + prefix + 'assets/style.css"><link rel="stylesheet" href="' + prefix + 'assets/katex/katex.min.css"><script defer src="' + prefix + 'assets/theme.js"></script></head><body><div class="wrap"><header><a class="brand" href="' + prefix + '">' + escape(site.name) +
+    '<link rel="icon" type="image/svg+xml" href="' + prefix + 'assets/favicon.svg"><link rel="stylesheet" href="' + prefix + 'assets/style.css"><link rel="stylesheet" href="' + prefix + 'assets/katex/katex.min.css"><script defer src="' + prefix + 'assets/theme.js"></script><script defer src="' + prefix + 'assets/endmarks-data.js"></script><script defer src="' + prefix + 'assets/endmark.js"></script></head><body><div class="wrap"><header><a class="brand" href="' + prefix + '">' + escape(site.name) +
     '</a><nav aria-label="Main navigation"><a href="' + prefix + '#writing">Writing</a><a href="' + prefix + '#papers">Papers</a><button type="button" data-theme-toggle aria-label="Switch to light background">Light</button></nav></header>' + content +
-    '<footer><span>' + escape(site.name) + '</span><span>© ' + new Date().getUTCFullYear() + '</span></footer></div></body></html>\n';
+    '<div class="closing-mark" data-closing-mark aria-hidden="true">❦</div><footer><span>' + escape(site.name) + '</span><span>© ' + new Date().getUTCFullYear() + '</span></footer></div></body></html>\n';
 }
 // This is generated output only; never remove the source Markdown files.
 fs.rmSync(path.join(out, 'writing'), { recursive: true, force: true });
@@ -44,7 +47,7 @@ const essays = fs.readdirSync(path.join(__dirname, 'content/writing')).filter(f 
   if (body.includes('katex-error')) throw new Error('Math failed in ' + file);
   const date = new Intl.DateTimeFormat('en-GB', {day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}).format(new Date(meta.date));
   write('writing/' + slug + '/index.html', page(meta.title + ' · ' + site.name, meta.summary,
-    '<main class="essay"><a class="back" href="../../">Back to home</a><div class="essay-heading"><p class="metadata">' + escape(date) + ' · Mathematics</p><h1>' + escape(meta.title) + '</h1><p class="byline">' + escape(site.name) + '</p></div><article class="prose">' + body + '</article>' +
+    '<main class="essay"><a class="back" href="../../">Back to home</a><div class="essay-heading"><p class="metadata">' + escape(date) + ' · Mathematics</p><h1>' + escape(meta.title) + '</h1><p class="byline">' + escape(site.name) + '</p></div><article class="prose">' + body + '</article><script defer src="../../assets/margin-notes.js"></script>' +
     (meta.note ? '<p class="original-note">' + escape(meta.note) + '</p>' : '') + '</main>', '../../', 'writing/' + slug + '/'));
   return { ...meta, slug };
 }).filter(Boolean).sort((a,b) => b.date.localeCompare(a.date));
@@ -65,4 +68,5 @@ const home = '<main><section class="intro"><div class="identity"><h1>' + escape(
   '</p><strong>Research training</strong><ul class="training">' + training + '</ul></div></details></section></main>';
 write('index.html', page(site.name, site.description, home));
 fs.cpSync(path.join(__dirname,'assets'), path.join(out,'assets'), { recursive: true });
+write('assets/endmarks-data.js', 'window.ANDRADE_ENDMARKS = ' + JSON.stringify(endmarks) + ';\nwindow.ANDRADE_ENDMARK_HOST = ' + JSON.stringify(site.url ? new URL(site.url).hostname : '') + ';\n');
 console.log('Built homepage and ' + essays.length + ' essay(s). All assets are local.');

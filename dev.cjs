@@ -43,7 +43,7 @@ function start(root = __dirname, port = Number(process.env.PORT || 4173)) {
         for (const name of fs.readdirSync(file).sort()) scan(path.join(file, name));
       } else entries.push(file + ':' + stat.mtimeMs + ':' + stat.ctimeMs + ':' + stat.size);
     }
-    for (const name of ['content', 'assets', 'vendor', 'build.cjs']) scan(path.join(root, name));
+    for (const name of ['content', 'assets', 'vendor', 'build.cjs', 'markdown.cjs']) scan(path.join(root, name));
     return entries.join('\n');
   }
   build();

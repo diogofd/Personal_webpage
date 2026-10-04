@@ -19,7 +19,7 @@ $$
 $$
 
 
-Taking connected components, we get an action of the mapping class group on $\pi_0$ of the object on the right hand side, and in the case that $\mathcal{S}^{\otimes}=\mathsf{LinCat}_{\mathbb{k}}^{\times}$, this recovers well-known actions on certain invariants of quantum groups.
+Taking connected components[^local], we get an action of the mapping class group on $\pi_0$ of the object on the right hand side, and in the case that $\mathcal{S}^{\otimes}=\mathsf{LinCat}_{\mathbb{k}}^{\times}$, this recovers well-known actions on certain invariants of quantum groups.
 
 ### 2 - Pushforward Property
 Factorization homology enjoys a Fubini-like property. This is often called the **pushforward property**. In its "simpler" guise it states that, for manifolds $M^{m},N^{n}$ (with superscript indicating dimension), we get the following equivalence 
@@ -131,4 +131,4 @@ are actual singular chains in $X$ with coefficients in $V$, and $\otimes$-excisi
 
 5. $\mathbb{E}_n$-algebras are also often constructed as deformations of commutative or cocommutative objects. The braided monoidal category of representations of the quantum group $\mathsf{U}_q(\mathfrak{g})$ is obtained by deforming a cocommutative Hopf algebra (the universal enveloping algebra of $\mathfrak{g}$).
 
-
+[^local]: here you could have easily said that the proof was too small to fit in the margin and get done with it, couldn't you? it would have been so easy...

@@ -9,7 +9,10 @@ for(const file of files.filter(f=>f.endsWith('.html'))) {
   const html=fs.readFileSync(file,'utf8');
   if(html.includes('katex-error')) throw new Error('Unrendered math in '+file);
   equations+=(html.match(/class="katex"/g)||[]).length;
+  const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
+  if (new Set(ids).size !== ids.length) throw new Error('Duplicate HTML ID in '+file);
   for(const [,url] of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
+    if (url.startsWith('#') && !ids.includes(url.slice(1))) throw new Error('Missing footnote or section target: '+url+' in '+file);
     if(/^(https?:|mailto:|data:|#)/.test(url)) continue;
     const target=path.resolve(path.dirname(file),url.split('#')[0]);
     if(!fs.existsSync(target)) throw new Error('Missing local asset or route: '+url+' in '+file);

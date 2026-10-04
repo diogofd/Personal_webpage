@@ -1,0 +1,14 @@
+{
+  "groups": [
+    { "name": "Printer’s garden", "symbols": "❦ ❧ ☙ ⁂ ⁎ ⁑ ✢ ✣ ✤ ✥ ✱ ✲ ✳ ✴ ✵ ✶ ✷ ✸ ✹ ✺ ✻ ✼ ✽ ✾ ✿ ❀ ❁ ❃ ❇ ❋" },
+    { "name": "Night sky", "symbols": "✦ ✧ ★ ☆ ✩ ✪ ✫ ✬ ✭ ✮ ✯ ✰ ⋆ ∗ ⁕ ☼ ☽ ☾ ☿ ♀ ♂ ♃ ♄ ♅ ♆ ♇ ☉ ☊ ☌ ☍" },
+    { "name": "Quiet geometry", "symbols": "■ □ ▢ ▣ ▤ ▥ ▦ ▧ ▨ ▩ ▪ ▫ ▬ ▭ ▮ ▯ ▰ ▱ ▲ △ ▴ ▵ ▶ ▷ ▸ ▹ ► ▻ ▼ ▽" },
+    { "name": "Circles & lenses", "symbols": "◉ ○ ◌ ◍ ◎ ● ◐ ◑ ◒ ◓ ◔ ◕ ◖ ◗ ◘ ◙ ◚ ◛ ◜ ◝ ◞ ◟ ◠ ◡ ◦ ◯ ◴ ◵ ◶ ◷" },
+    { "name": "Facets & mosaics", "symbols": "◇ ◆ ◈ ◊ ◁ ◀ ◂ ◃ ◄ ◅ ◢ ◣ ◤ ◥ ◧ ◨ ◩ ◪ ◫ ◬ ◭ ◮ ◰ ◱ ◲ ◳ ⬒ ⬓ ⬔ ⬕" },
+    { "name": "Wandering lines", "symbols": "↜ ↝ ↞ ↟ ↠ ↡ ↢ ↣ ↤ ↥ ↦ ↧ ↩ ↪ ↫ ↬ ↭ ↯ ↰ ↱ ↲ ↳ ↴ ↵ ↶ ↷ ↺ ↻ ⇜ ⇝" },
+    { "name": "Paired trajectories", "symbols": "⇀ ⇁ ⇂ ⇃ ⇄ ⇅ ⇆ ⇇ ⇈ ⇉ ⇊ ⇋ ⇌ ⇐ ⇑ ⇒ ⇓ ⇔ ⇕ ⇖ ⇗ ⇘ ⇙ ⇚ ⇛ ⇠ ⇡ ⇢ ⇣ ⇤" },
+    { "name": "Algebraic seals", "symbols": "⊕ ⊖ ⊗ ⊘ ⊙ ⊚ ⊛ ⊜ ⊝ ⊞ ⊟ ⊠ ⊡ ⋄ ⋇ ⋈ ⋉ ⋊ ⋋ ⋌ ⋏ ⋎ ⨀ ⨁ ⨂ ⨃ ⨄ ⨅ ⨆ ⨇" },
+    { "name": "Relations & limits", "symbols": "∞ ∴ ∵ ∷ ∺ ∻ ∼ ∽ ∾ ∿ ≀ ≋ ≍ ≎ ≏ ≐ ≑ ≒ ≓ ≔ ≕ ≖ ≗ ≘ ≙ ≚ ≛ ≜ ≝ ≟" },
+    { "name": "Strange little instruments", "symbols": "⌁ ⌇ ⌑ ⌖ ⌗ ⌘ ⌙ ⌬ ⌭ ⌮ ⌯ ⌰ ⌱ ⌲ ⌳ ⌴ ⌵ ⌶ ⌷ ⌸ ⌹ ⌺ ⌻ ⌼ ⌽ ⌾ ⍟ ⍣ ⍥ ⍨" }
+  ]
+}
