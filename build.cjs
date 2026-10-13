@@ -60,8 +60,8 @@ const talks = site.talks.map(t => {
     (t.abstract ? '<details class="abstract"><summary>Abstract</summary><div class="abstract-copy"><p>' + escape(t.abstract) + '</p>' + resources + '</div></details>' : resources) + '</div></div>';
 }).join('');
 const training = site.training.map(t => '<li>' + link(t.title,t.url) + ' · ' + escape(t.venue) + '</li>').join('');
-const home = '<main><section class="intro"><div class="identity"><h1>' + escape(site.name) + '</h1></div><img class="portrait" src="' + escape(site.portrait) + '" alt="Portrait of ' + escape(site.name) + '" width="180" height="180"><div class="bio">' + markdown.render(read('content/about.md')) +
-  '<div class="social" aria-label="Profile links">' + site.links.map(l => link(l.label,l.url)).join('') + '</div></div></section>' +
+const home = '<main><section class="intro"><img class="portrait" src="' + escape(site.portrait) + '" alt="Portrait of ' + escape(site.name) + '" width="112" height="112"><div class="identity"><h1>' + escape(site.name) + '</h1>' +
+  '<div class="social" aria-label="Profile links">' + site.links.map(l => link(l.label,l.url)).join('') + '</div></div><div class="bio">' + markdown.render(read('content/about.md')) + '</div></section>' +
   '<section id="writing"><div class="section-title"><h2>Recent writing</h2></div>' + (writing || '<p class="metadata">Nothing published here yet.</p>') + '</section>' +
   '<section id="papers"><div class="section-title"><h2>Publications &amp; preprints</h2></div>' + publications + '</section>' +
   '<section class="activities"><div class="section-title"><h2>Teaching &amp; talks</h2></div>' + talks +
@@ -73,7 +73,7 @@ const books = library.books.slice().sort((a,b) => (b.lastRead || '').localeCompa
 const subjects = [...new Set(books.flatMap(book => book.tags))].sort();
 const bookRows = books.map(book => {
   if (!book.title || !Array.isArray(book.authors) || !Array.isArray(book.tags)) throw new Error('Invalid book metadata in library.json');
-  if (book.cover && !/^assets\/library-covers\/[a-z0-9-]+\.jpg$/.test(book.cover)) throw new Error('Use a local library cover path.');
+  if (book.cover && !/^assets\/library-covers\/[a-z0-9-]+\.(jpg|png|webp|gif)$/.test(book.cover)) throw new Error('Use a local library cover path.');
   const cover = book.cover ? '<img class="library-cover" src="../' + escape(book.cover) + '" alt="Cover of ' + escape(book.title) + '" loading="lazy" width="48" height="72">' : '<span class="library-cover-gap" aria-hidden="true"></span>';
   const rating = book.rating === null ? '' : '<span class="library-rating" aria-label="Rating ' + escape(book.rating) + '"><span aria-hidden="true">★ </span>' + escape(book.rating) + '</span>';
   let date = '';
