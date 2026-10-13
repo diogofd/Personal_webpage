@@ -4,6 +4,7 @@ const path = require('node:path');
 const markdown = require('./markdown.cjs');
 const read = file => fs.readFileSync(path.join(__dirname, file), 'utf8');
 const site = JSON.parse(read('content/site.json'));
+const library = JSON.parse(read('content/library.json'));
 const palette = JSON.parse(read('content/endmarks.json'));
 if (!Array.isArray(palette.groups)) throw new Error('endmarks.json: add a groups array.');
 const endmarks = palette.groups.flatMap(group => {
@@ -28,7 +29,7 @@ function page(title, description, content, prefix = './', route = '') {
   const canonical = site.url ? '<link rel="canonical" href="' + escape(new URL(route, site.url.endsWith('/') ? site.url : site.url + '/').href) + '">' : '';
   return '<!doctype html>\n<html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>' + escape(title) + '</title><meta name="description" content="' + escape(description) + '">' + canonical +
     '<link rel="icon" type="image/svg+xml" href="' + prefix + 'assets/favicon.svg"><link rel="stylesheet" href="' + prefix + 'assets/style.css"><link rel="stylesheet" href="' + prefix + 'assets/katex/katex.min.css"><script defer src="' + prefix + 'assets/theme.js"></script><script defer src="' + prefix + 'assets/endmarks-data.js"></script><script defer src="' + prefix + 'assets/endmark.js"></script></head><body><div class="wrap"><header><a class="brand" href="' + prefix + '">' + escape(site.name) +
-    '</a><nav aria-label="Main navigation"><a href="' + prefix + '#writing">Writing</a><a href="' + prefix + '#papers">Papers</a><button type="button" data-theme-toggle aria-label="Switch to light background">Light</button></nav></header>' + content +
+    '</a><nav aria-label="Main navigation"><a href="' + prefix + '#writing">Writing</a><a href="' + prefix + '#papers">Papers</a><a href="' + prefix + 'library/"' + (route === 'library/' ? ' aria-current="page"' : '') + '>Library</a><button type="button" data-theme-toggle aria-label="Switch to light background">Light</button></nav></header>' + content +
     '<div class="closing-mark" data-closing-mark aria-hidden="true">❦</div><footer><span>' + escape(site.name) + '</span><span>© ' + new Date().getUTCFullYear() + '</span></footer></div></body></html>\n';
 }
 // This is generated output only; never remove the source Markdown files.
@@ -67,6 +68,26 @@ const home = '<main><section class="intro"><div class="identity"><h1>' + escape(
   '<details class="more-phd"><summary>More from my PhD</summary><div class="more"><p><strong>Research visits.</strong> ' + escape(site.researchVisits) + '</p><p><strong>Seminars.</strong> ' + markdown.renderInline(site.seminars) +
   '</p><strong>Research training</strong><ul class="training">' + training + '</ul></div></details></section></main>';
 write('index.html', page(site.name, site.description, home));
+// Only the approved public properties live in this snapshot; no Notion page bodies.
+const books = library.books.slice().sort((a,b) => (b.lastRead || '').localeCompare(a.lastRead || '') || a.title.localeCompare(b.title));
+const subjects = [...new Set(books.flatMap(book => book.tags))].sort();
+const bookRows = books.map(book => {
+  if (!book.title || !Array.isArray(book.authors) || !Array.isArray(book.tags)) throw new Error('Invalid book metadata in library.json');
+  if (book.cover && !/^assets\/library-covers\/[a-z0-9-]+\.jpg$/.test(book.cover)) throw new Error('Use a local library cover path.');
+  const cover = book.cover ? '<img class="library-cover" src="../' + escape(book.cover) + '" alt="Cover of ' + escape(book.title) + '" loading="lazy" width="48" height="72">' : '<span class="library-cover-gap" aria-hidden="true"></span>';
+  const rating = book.rating === null ? '' : '<span class="library-rating" aria-label="Rating ' + escape(book.rating) + '"><span aria-hidden="true">★ </span>' + escape(book.rating) + '</span>';
+  let date = '';
+  if (book.lastRead) {
+    if (Number.isNaN(Date.parse(book.lastRead))) throw new Error('Invalid Last Read date for ' + book.title);
+    date = '<time class="library-date" datetime="' + escape(book.lastRead) + '">' + new Intl.DateTimeFormat('en-GB',{month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(book.lastRead)) + '</time>';
+  }
+  const search = [book.title,...book.authors,...book.tags,book.note || ''].join(' ');
+  return '<article class="library-row" data-library-book data-search="' + escape(search) + '" data-tags="' + escape(JSON.stringify(book.tags)) + '"><div class="library-book">' + cover + '<div><h2>' + escape(book.title) + '</h2>' + (book.authors.length ? '<p class="library-author">' + escape(book.authors.join(', ')) + '</p>' : '') + (book.note ? '<p class="library-note">' + escape(book.note) + '</p>' : '') + '</div></div><div class="library-rating-cell">' + rating + '</div><div class="library-date-cell">' + date + '</div></article>';
+}).join('');
+const libraryPage = '<main class="library"><section class="library-heading"><h1>Library</h1><div class="library-description">' + markdown.render(read('content/library.md')) + '</div></section>' +
+  '<form class="library-tools" data-library-controls role="search" hidden><label><span class="sr-only">Find a book or author</span><input type="search" data-library-search placeholder="Find a book or author"></label><label><span class="sr-only">Filter by subject</span><select data-library-subject><option value="">All subjects</option>' + subjects.map(subject => '<option>' + escape(subject) + '</option>').join('') + '</select></label></form>' +
+  '<p class="library-count" data-library-count aria-live="polite">' + books.length + ' books</p><div class="library-columns" aria-hidden="true"><span>Book / author</span><span>Rating</span><span>Last read</span></div><div data-library-list>' + bookRows + '</div><p class="library-empty" data-library-empty hidden>No matching books.</p></main><script defer src="../assets/library.js"></script>';
+write('library/index.html', page('Library · ' + site.name, 'Reviews and data for the books I have read and the ones I am reading.', libraryPage, '../', 'library/'));
 fs.cpSync(path.join(__dirname,'assets'), path.join(out,'assets'), { recursive: true });
 write('assets/endmarks-data.js', 'window.ANDRADE_ENDMARKS = ' + JSON.stringify(endmarks) + ';\nwindow.ANDRADE_ENDMARK_HOST = ' + JSON.stringify(site.url ? new URL(site.url).hostname : '') + ';\n');
 console.log('Built homepage and ' + essays.length + ' essay(s). All assets are local.');

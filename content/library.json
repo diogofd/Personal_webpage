@@ -1,0 +1,869 @@
+{
+  "updated": "2026-10-13",
+  "books": [
+    {
+      "title": "The Bitcoin Standard",
+      "authors": [
+        "Saifdean Ammous"
+      ],
+      "tags": [
+        "Economics",
+        "Cryptocurrency"
+      ],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "Being Jewish After the Destruction of Gaza",
+      "authors": [
+        "Peter Beinart"
+      ],
+      "tags": [
+        "Politics",
+        "Religion"
+      ],
+      "rating": 4,
+      "lastRead": "2025-02-15",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "Co-Intelligence",
+      "authors": [
+        "Ethan Mollick"
+      ],
+      "tags": [
+        "AI"
+      ],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "A Partícula no Fim do Universo",
+      "authors": [
+        "Sean Carroll"
+      ],
+      "tags": [
+        "Physics"
+      ],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "Category Theory in Context",
+      "authors": [
+        "Emily Riehl"
+      ],
+      "tags": [
+        "Mathematics",
+        "Category Theory"
+      ],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "Mathematics: A Very Short Introduction",
+      "authors": [
+        "Timothy Gowers"
+      ],
+      "tags": [
+        "Mathematics"
+      ],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "The Number Mysteries: A Mathematical Odyssey Through  Everyday Life",
+      "authors": [
+        "Marcus du Sautoy"
+      ],
+      "tags": [
+        "Mathematics"
+      ],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "Incompletude",
+      "authors": [
+        "Rebecca Goldstein"
+      ],
+      "tags": [
+        "Mathematics"
+      ],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "Situational Awareness",
+      "authors": [
+        "Leopolod Aschenbrenner"
+      ],
+      "tags": [
+        "Alignment",
+        "AI"
+      ],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "On Freedom",
+      "authors": [
+        "Timothy Snyder"
+      ],
+      "tags": [
+        "Philosophy",
+        "Geopolitics"
+      ],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "Hillbilly Elegy",
+      "authors": [
+        "J.D. Vance"
+      ],
+      "tags": [
+        "Autobiography"
+      ],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "Who Will Defend Europe",
+      "authors": [
+        "Keir Giles"
+      ],
+      "tags": [
+        "Geopolitics"
+      ],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "Leadership",
+      "authors": [
+        "Henry Kissinger"
+      ],
+      "tags": [
+        "Geopolitics",
+        "History"
+      ],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "Material World",
+      "authors": [],
+      "tags": [],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "The Vegetarian",
+      "authors": [
+        "Han Kang"
+      ],
+      "tags": [
+        "Fiction"
+      ],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "Nexus",
+      "authors": [],
+      "tags": [],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "Hunger",
+      "authors": [
+        "Knut Hamsun"
+      ],
+      "tags": [
+        "Psychology",
+        "Classics"
+      ],
+      "rating": null,
+      "lastRead": "2024-10-02",
+      "note": "",
+      "cover": "assets/library-covers/hunger-ec2a90.jpg"
+    },
+    {
+      "title": "Life is Hard",
+      "authors": [],
+      "tags": [],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "Foundry",
+      "authors": [
+        "Eliot Peper"
+      ],
+      "tags": [
+        "Thriller",
+        "Spy"
+      ],
+      "rating": 4,
+      "lastRead": "2024-10-23",
+      "note": "2nd Cold War memorabilia.",
+      "cover": "assets/library-covers/foundry-65782f.jpg"
+    },
+    {
+      "title": "Invisible Cities",
+      "authors": [
+        "Italo Calvino"
+      ],
+      "tags": [
+        "Fiction",
+        "Structuralism"
+      ],
+      "rating": 5,
+      "lastRead": "2024-10-21",
+      "note": "",
+      "cover": "assets/library-covers/invisible-cities-81263f.jpg"
+    },
+    {
+      "title": "The Hair Carpet Weavers",
+      "authors": [
+        "Andreas Eschbach"
+      ],
+      "tags": [
+        "SciFi",
+        "Religion"
+      ],
+      "rating": 4,
+      "lastRead": "2024-10-05",
+      "note": "A beautiful tapestry of themes on Humanity",
+      "cover": "assets/library-covers/the-hair-carpet-weavers-488ced.jpg"
+    },
+    {
+      "title": "Spies Against Armageddon: Inside Israel's Secret Wars",
+      "authors": [
+        "Yossi Melman",
+        "Dan Raviv"
+      ],
+      "tags": [],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "The Hour Between Dog and Wolf: Risk Taking, Gut Feelings and the Biology of Boom and Bust",
+      "authors": [],
+      "tags": [],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "Feynman Processes",
+      "authors": [],
+      "tags": [],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "O Planalto e a Estepe",
+      "authors": [],
+      "tags": [],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "How Much Land Does a Man Need",
+      "authors": [],
+      "tags": [],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "O Menino do Dedo Verde",
+      "authors": [],
+      "tags": [],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "The Mighty and The Almighty: Reflections on America, God, and World Affairs",
+      "authors": [],
+      "tags": [],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "Debt: The First 5.000 Years",
+      "authors": [],
+      "tags": [],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "Isaac Newton",
+      "authors": [],
+      "tags": [],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "The Three-Body Problem",
+      "authors": [],
+      "tags": [],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "Eric Clapton: an autobigraphy",
+      "authors": [],
+      "tags": [],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "Fórmula de Deus",
+      "authors": [],
+      "tags": [],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "A Day In the Life of Ivan",
+      "authors": [],
+      "tags": [],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "Communist Manifesto",
+      "authors": [],
+      "tags": [],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "The Future of Geography",
+      "authors": [],
+      "tags": [],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "Corpse Washer",
+      "authors": [],
+      "tags": [],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "Networks 101",
+      "authors": [],
+      "tags": [],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "Inadequate Equilibria: Where and How Civilizations Get Stuck",
+      "authors": [
+        "Eliezer Yudkowsky"
+      ],
+      "tags": [
+        "Alignment",
+        "Rationalism"
+      ],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "The Argonauts",
+      "authors": [
+        "Maggie Nelson"
+      ],
+      "tags": [
+        "Memoir",
+        "Queer"
+      ],
+      "rating": 5,
+      "lastRead": "2019-10-16",
+      "note": "To re-read",
+      "cover": "assets/library-covers/the-argonauts-90c3d7.jpg"
+    },
+    {
+      "title": "Lord Arthur Savile’s Crime",
+      "authors": [
+        "Oscar Wilde"
+      ],
+      "tags": [
+        "Classics",
+        "Short Story"
+      ],
+      "rating": 4,
+      "lastRead": "2020-10-16",
+      "note": "",
+      "cover": "assets/library-covers/lord-arthur-savile-s-crime-02772f.jpg"
+    },
+    {
+      "title": "The Perks of Being a Wallflower",
+      "authors": [
+        "Stephen Chbosky"
+      ],
+      "tags": [
+        "Young Adult",
+        "Classics"
+      ],
+      "rating": 4,
+      "lastRead": "2019-08-16",
+      "note": "",
+      "cover": "assets/library-covers/the-perks-of-being-a-wallflower-36890e.jpg"
+    },
+    {
+      "title": "The Death of Ivan Ilych",
+      "authors": [
+        "Leo Tolstoy"
+      ],
+      "tags": [
+        "Classics"
+      ],
+      "rating": 4,
+      "lastRead": "2024-03-15",
+      "note": "",
+      "cover": "assets/library-covers/the-death-of-ivan-ilych-055cd0.jpg"
+    },
+    {
+      "title": "The Great Gatsby",
+      "authors": [
+        "F. Scott Fitzgerald"
+      ],
+      "tags": [
+        "Classics",
+        "Fiction"
+      ],
+      "rating": 4,
+      "lastRead": "2019-08-25",
+      "note": "",
+      "cover": "assets/library-covers/the-great-gatsby-7ec493.jpg"
+    },
+    {
+      "title": "Véspera",
+      "authors": [
+        "Carla Madeira"
+      ],
+      "tags": [
+        "Fiction",
+        "Contemporary"
+      ],
+      "rating": 5,
+      "lastRead": "2024-05-15",
+      "note": "",
+      "cover": "assets/library-covers/vespera-ef1476.jpg"
+    },
+    {
+      "title": "Tales From The Café",
+      "authors": [
+        "Toshikazu Kawaguchi"
+      ],
+      "tags": [
+        "Fiction",
+        "Magical Realism"
+      ],
+      "rating": 5,
+      "lastRead": "2024-08-15",
+      "note": "What if?… The coffee’s getting cold. Hurry.",
+      "cover": "assets/library-covers/tales-from-the-cafe-467119.jpg"
+    },
+    {
+      "title": "A Beautiful Question: Finding Nature’s Deep Design",
+      "authors": [
+        "Frank Wilczek"
+      ],
+      "tags": [
+        "Physics",
+        "Science"
+      ],
+      "rating": 5,
+      "lastRead": "",
+      "note": "",
+      "cover": "assets/library-covers/a-beautiful-question-finding-nature-s-deep-design-e89d19.jpg"
+    },
+    {
+      "title": "Talking to My Daughter About the Economy: or, How Capitalism Works — and How it Fails",
+      "authors": [
+        "Yanis Varoufakis"
+      ],
+      "tags": [
+        "Economics",
+        "Capitalism"
+      ],
+      "rating": 5,
+      "lastRead": "2020-07-16",
+      "note": "",
+      "cover": "assets/library-covers/talking-to-my-daughter-about-the-economy-or-how-capitalism-works--ee3b06.jpg"
+    },
+    {
+      "title": "Prisoners of Geography: Ten Maps That Tell You Everything You Need to Know About Global Politics",
+      "authors": [
+        "Tim Marshall"
+      ],
+      "tags": [
+        "Geopolitics",
+        "Geography"
+      ],
+      "rating": 4,
+      "lastRead": "",
+      "note": "Maps are good, without them we’re truly lost.",
+      "cover": "assets/library-covers/prisoners-of-geography-ten-maps-that-tell-you-everything-you-need-273a5c.jpg"
+    },
+    {
+      "title": "Narrative Economics: How Stories Go Viral and Drive Major Economic Events",
+      "authors": [
+        "Robert J. Shiller"
+      ],
+      "tags": [
+        "Economics",
+        "Psychology"
+      ],
+      "rating": 3,
+      "lastRead": "2019-12-01",
+      "note": "",
+      "cover": "assets/library-covers/narrative-economics-how-stories-go-viral-and-drive-major-economic-5e244f.jpg"
+    },
+    {
+      "title": "Permanent Record",
+      "authors": [
+        "Edward Snowden"
+      ],
+      "tags": [
+        "Autobiography",
+        "Philosophy"
+      ],
+      "rating": 5,
+      "lastRead": "2020-01-05",
+      "note": "“There is, simply, no way to ignore privacy”",
+      "cover": "assets/library-covers/permanent-record-af3b5d.jpg"
+    },
+    {
+      "title": "A Promised land",
+      "authors": [
+        "Barack Obama"
+      ],
+      "tags": [
+        "Autobiography",
+        "Politics"
+      ],
+      "rating": 5,
+      "lastRead": "2020-11-01",
+      "note": "Yes, he could. and he did some.",
+      "cover": "assets/library-covers/a-promised-land-2c997c.jpg"
+    },
+    {
+      "title": "Na Cabeça de Ventura",
+      "authors": [
+        "Vítor Matos"
+      ],
+      "tags": [
+        "Biography",
+        "Politics"
+      ],
+      "rating": 3,
+      "lastRead": "2024-03-10",
+      "note": "Assim nasceu o Chega.",
+      "cover": "assets/library-covers/na-cabeca-de-ventura-208341.jpg"
+    },
+    {
+      "title": "Siddartha",
+      "authors": [
+        "Hesse Hermann"
+      ],
+      "tags": [
+        "Classics",
+        "Fiction",
+        "Philosophy",
+        "Religion"
+      ],
+      "rating": 5,
+      "lastRead": "2023-06-13",
+      "note": "",
+      "cover": "assets/library-covers/siddartha-fac8cb.jpg"
+    },
+    {
+      "title": "The Constant Gardener",
+      "authors": [
+        "John le Carré"
+      ],
+      "tags": [
+        "Fiction",
+        "Espionage",
+        "Thriller"
+      ],
+      "rating": 4,
+      "lastRead": "2023-09-23",
+      "note": "",
+      "cover": "assets/library-covers/the-constant-gardener-648d5e.jpg"
+    },
+    {
+      "title": "Passar das Marcas",
+      "authors": [
+        "Matthew Owens"
+      ],
+      "tags": [
+        "Non-fiction",
+        "History",
+        "Ukraine-Russia War"
+      ],
+      "rating": 4,
+      "lastRead": "2024-01-04",
+      "note": "",
+      "cover": "assets/library-covers/passar-das-marcas-818aa1.jpg"
+    },
+    {
+      "title": "O Fim da Vergonha",
+      "authors": [
+        "Vicente Valentim"
+      ],
+      "tags": [
+        "Political Science"
+      ],
+      "rating": 4,
+      "lastRead": "2024-09-15",
+      "note": "From latent to mainstream: the new right is alive.",
+      "cover": "assets/library-covers/o-fim-da-vergonha-19c5b7.jpg"
+    },
+    {
+      "title": "Novembro",
+      "authors": [
+        "Jaime Nogueira Pinto"
+      ],
+      "tags": [
+        "Fiction",
+        "Historical Romance"
+      ],
+      "rating": 4,
+      "lastRead": "2024-04-25",
+      "note": "",
+      "cover": "assets/library-covers/novembro-ecc870.jpg"
+    },
+    {
+      "title": "The Coming Wave",
+      "authors": [
+        "Mustafa Suleyman"
+      ],
+      "tags": [
+        "AI",
+        "Science"
+      ],
+      "rating": null,
+      "lastRead": "2025-08-07",
+      "note": "",
+      "cover": "assets/library-covers/the-coming-wave-cd9c4a.jpg"
+    },
+    {
+      "title": "Ways of Being",
+      "authors": [
+        "James Bridle"
+      ],
+      "tags": [
+        "AI",
+        "Philosophy",
+        "Science"
+      ],
+      "rating": null,
+      "lastRead": "2025-08-08",
+      "note": "",
+      "cover": "assets/library-covers/ways-of-being-1873c6.jpg"
+    },
+    {
+      "title": "Admiravel mundo novo",
+      "authors": [
+        "Aldus Huxley"
+      ],
+      "tags": [
+        "Fiction",
+        "SciFi"
+      ],
+      "rating": 3,
+      "lastRead": "2025-09-15",
+      "note": "Life was never again the same",
+      "cover": ""
+    },
+    {
+      "title": "*Fly, Wild Swans: My Mother, Myself and China*",
+      "authors": [
+        "Jung Chang"
+      ],
+      "tags": [
+        "Autobiography",
+        "Politics"
+      ],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "The Hitchhiker's Guide to the Galaxy",
+      "authors": [
+        "Douglas Adams"
+      ],
+      "tags": [
+        "Fiction",
+        "Philosophy",
+        "SciFi"
+      ],
+      "rating": null,
+      "lastRead": "2026-01-20",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "Breakneck",
+      "authors": [
+        "Dan Wang"
+      ],
+      "tags": [
+        "Political Science",
+        "Geopolitics"
+      ],
+      "rating": null,
+      "lastRead": "2026-01-15",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "***Perfectly Reasonable Deviations from the Beaten Track***",
+      "authors": [
+        "Richard P. Feynman"
+      ],
+      "tags": [
+        "Biography",
+        "Letters"
+      ],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "Peak: Secrets from the New Science of Expertise",
+      "authors": [
+        "Robert Pool",
+        "K. Anders Ericsson"
+      ],
+      "tags": [
+        "Psychology"
+      ],
+      "rating": null,
+      "lastRead": "2026-02-28",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "If Anyone Builds It, Everyone Dies",
+      "authors": [
+        "Eliezer Yudkowsky"
+      ],
+      "tags": [
+        "Alignment",
+        "AI"
+      ],
+      "rating": 4,
+      "lastRead": "2026-05-31",
+      "note": "",
+      "cover": "assets/library-covers/if-anyone-builds-it-everyone-dies-517110.jpg"
+    },
+    {
+      "title": "**A Brief History of Intelligence: Evolution, AI, and the Five Breakthroughs That Made Our Brains**",
+      "authors": [
+        "Max Bennet"
+      ],
+      "tags": [
+        "Science",
+        "AI"
+      ],
+      "rating": null,
+      "lastRead": "",
+      "note": "",
+      "cover": ""
+    },
+    {
+      "title": "Christie Malry’s Own Double-Entry",
+      "authors": [
+        "B. S. Johnson"
+      ],
+      "tags": [
+        "Fiction"
+      ],
+      "rating": 4,
+      "lastRead": "2026-06-14",
+      "note": "",
+      "cover": "assets/library-covers/christie-malry-s-own-double-entry-ab7593.jpg"
+    }
+  ]
+}

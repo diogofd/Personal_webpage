@@ -85,6 +85,14 @@ The reference links to the note, and the return link takes readers back. Notes m
 
 With `npm run dev` running, saving an essay updates its notes and preview automatically.
 
+## Library
+
+`/library/` is a static reading index with small cover thumbnails, search, and subject filtering. Edit the introduction in `content/library.md`; its email link uses ordinary Markdown. Edit the public book snapshot in `content/library.json`, and keep local cover paths under `assets/library-covers/`.
+
+The snapshot includes titles, authors, tags, ratings, last-read dates, and one-liners from Diogo’s Book Reviews in Notion. It does not contain full reviews, page bodies, temporary file URLs, or access credentials. Empty fields are omitted in the page; undated books are not labelled read or currently reading. Empty untitled rows and placeholder one-liners such as `TBD` are excluded. Cover artwork remains the property of its respective rights holders.
+
+Notion remains the editing source. Refresh the approved snapshot and publish to update the website; this is not an automatic/live Notion connection. Search runs only in the browser against the already-rendered list. Without JavaScript, all books remain readable.
+
 ## Hosting and your domain
 
 `dist/` contains the complete deployable website. Copy its contents to any static web host. The project has no Sites-specific runtime dependency.
