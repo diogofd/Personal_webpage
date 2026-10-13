@@ -13,7 +13,7 @@
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/the-bitcoin-standard-sourced.jpg"
     },
     {
       "title": "Being Jewish After the Destruction of Gaza",
@@ -27,7 +27,7 @@
       "rating": 4,
       "lastRead": "2025-02-15",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/being-jewish-after-the-destruction-of-gaza-sourced.jpg"
     },
     {
       "title": "Co-Intelligence",
@@ -40,7 +40,7 @@
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/co-intelligence-sourced.jpg"
     },
     {
       "title": "A Partícula no Fim do Universo",
@@ -53,7 +53,7 @@
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/a-particula-no-fim-do-universo-sourced.jpg"
     },
     {
       "title": "Category Theory in Context",
@@ -67,7 +67,7 @@
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/category-theory-in-context-sourced.jpg"
     },
     {
       "title": "Mathematics: A Very Short Introduction",
@@ -80,7 +80,7 @@
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/mathematics-a-very-short-introduction-sourced.jpg"
     },
     {
       "title": "The Number Mysteries: A Mathematical Odyssey Through  Everyday Life",
@@ -93,7 +93,7 @@
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/the-number-mysteries-a-mathematical-odyssey-through-everyday-life-sourced.jpg"
     },
     {
       "title": "Incompletude",
@@ -106,7 +106,7 @@
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/incompletude-sourced.jpg"
     },
     {
       "title": "Situational Awareness",
@@ -134,7 +134,7 @@
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/on-freedom-sourced.jpg"
     },
     {
       "title": "Hillbilly Elegy",
@@ -147,7 +147,7 @@
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/hillbilly-elegy-sourced.jpg"
     },
     {
       "title": "Who Will Defend Europe",
@@ -160,7 +160,7 @@
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/who-will-defend-europe-sourced.jpg"
     },
     {
       "title": "Leadership",
@@ -174,16 +174,16 @@
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/leadership-sourced.jpg"
     },
     {
       "title": "Material World",
-      "authors": [],
-      "tags": [],
+      "authors": ["Ed Conway"],
+      "tags": ["Non-fiction", "Economics", "Geography", "Science"],
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/material-world-sourced.jpg"
     },
     {
       "title": "The Vegetarian",
@@ -196,16 +196,16 @@
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/the-vegetarian-sourced.jpg"
     },
     {
       "title": "Nexus",
-      "authors": [],
-      "tags": [],
+      "authors": ["Yuval Noah Harari"],
+      "tags": ["Non-fiction", "History", "AI"],
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/nexus-sourced.jpg"
     },
     {
       "title": "Hunger",
@@ -223,12 +223,12 @@
     },
     {
       "title": "Life is Hard",
-      "authors": [],
-      "tags": [],
+      "authors": ["Kieran Setiya"],
+      "tags": ["Non-fiction", "Philosophy"],
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/life-is-hard-sourced.jpg"
     },
     {
       "title": "Foundry",
@@ -278,20 +278,31 @@
         "Yossi Melman",
         "Dan Raviv"
       ],
-      "tags": [],
+      "tags": [
+        "Non-fiction",
+        "Espionage",
+        "Geopolitics"
+      ],
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/spies-against-armageddon-inside-israel-s-secret-wars-sourced.jpg"
     },
     {
       "title": "The Hour Between Dog and Wolf: Risk Taking, Gut Feelings and the Biology of Boom and Bust",
-      "authors": [],
-      "tags": [],
+      "authors": [
+        "John Coates"
+      ],
+      "tags": [
+        "Non-fiction",
+        "Economics",
+        "Psychology",
+        "Science"
+      ],
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/the-hour-between-dog-and-wolf-risk-taking-gut-feelings-and-the-biology-of-b-sourced.jpg"
     },
     {
       "title": "Feynman Processes",
@@ -304,120 +315,187 @@
     },
     {
       "title": "O Planalto e a Estepe",
-      "authors": [],
-      "tags": [],
+      "authors": [
+        "Pepetela"
+      ],
+      "tags": [
+        "Fiction",
+        "Historical Romance"
+      ],
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/o-planalto-e-a-estepe-sourced.jpg"
     },
     {
       "title": "How Much Land Does a Man Need",
-      "authors": [],
-      "tags": [],
+      "authors": [
+        "Leo Tolstoy"
+      ],
+      "tags": [
+        "Fiction",
+        "Classics",
+        "Short Story"
+      ],
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/how-much-land-does-a-man-need-sourced.jpg"
     },
     {
       "title": "O Menino do Dedo Verde",
-      "authors": [],
-      "tags": [],
+      "authors": [
+        "Maurice Druon"
+      ],
+      "tags": [
+        "Fiction"
+      ],
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/o-menino-do-dedo-verde-sourced.jpg"
     },
     {
       "title": "The Mighty and The Almighty: Reflections on America, God, and World Affairs",
-      "authors": [],
-      "tags": [],
+      "authors": [
+        "Madeleine Albright"
+      ],
+      "tags": [
+        "Non-fiction",
+        "Religion",
+        "Geopolitics",
+        "Politics"
+      ],
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/the-mighty-and-the-almighty-reflections-on-america-god-and-world-affairs-sourced.jpg"
     },
     {
       "title": "Debt: The First 5.000 Years",
-      "authors": [],
-      "tags": [],
+      "authors": [
+        "David Graeber"
+      ],
+      "tags": [
+        "Non-fiction",
+        "Economics",
+        "History"
+      ],
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/debt-the-first-5-000-years-sourced.jpg"
     },
     {
       "title": "Isaac Newton",
-      "authors": [],
-      "tags": [],
+      "authors": ["James Gleick"],
+      "tags": ["Biography", "Science", "History"],
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/isaac-newton-sourced.jpg"
     },
     {
       "title": "The Three-Body Problem",
-      "authors": [],
-      "tags": [],
+      "authors": [
+        "Cixin Liu"
+      ],
+      "tags": [
+        "Fiction",
+        "SciFi"
+      ],
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/the-three-body-problem-sourced.jpg"
     },
     {
       "title": "Eric Clapton: an autobigraphy",
-      "authors": [],
-      "tags": [],
+      "authors": [
+        "Eric Clapton"
+      ],
+      "tags": [
+        "Autobiography",
+        "Memoir"
+      ],
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/eric-clapton-an-autobigraphy-sourced.jpg"
     },
     {
       "title": "Fórmula de Deus",
-      "authors": [],
-      "tags": [],
+      "authors": [
+        "José Rodrigues dos Santos"
+      ],
+      "tags": [
+        "Fiction",
+        "Thriller"
+      ],
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/formula-de-deus-sourced.jpg"
     },
     {
       "title": "A Day In the Life of Ivan",
-      "authors": [],
-      "tags": [],
+      "authors": [
+        "Aleksandr Solzhenitsyn"
+      ],
+      "tags": [
+        "Fiction",
+        "Classics"
+      ],
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/a-day-in-the-life-of-ivan-sourced.jpg"
     },
     {
       "title": "Communist Manifesto",
-      "authors": [],
-      "tags": [],
+      "authors": [
+        "Karl Marx",
+        "Friedrich Engels"
+      ],
+      "tags": [
+        "Non-fiction",
+        "Politics",
+        "Philosophy",
+        "Economics"
+      ],
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/communist-manifesto-sourced.jpg"
     },
     {
       "title": "The Future of Geography",
-      "authors": [],
-      "tags": [],
+      "authors": [
+        "Tim Marshall"
+      ],
+      "tags": [
+        "Non-fiction",
+        "Geopolitics",
+        "Geography"
+      ],
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/the-future-of-geography-sourced.jpg"
     },
     {
       "title": "Corpse Washer",
-      "authors": [],
-      "tags": [],
+      "authors": [
+        "Sinan Antoon"
+      ],
+      "tags": [
+        "Fiction",
+        "Contemporary"
+      ],
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/corpse-washer-sourced.jpg"
     },
     {
       "title": "Networks 101",
@@ -440,7 +518,7 @@
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/inadequate-equilibria-where-and-how-civilizations-get-stuck-sourced.jpg"
     },
     {
       "title": "The Argonauts",
@@ -751,7 +829,7 @@
       "rating": 3,
       "lastRead": "2025-09-15",
       "note": "Life was never again the same",
-      "cover": ""
+      "cover": "assets/library-covers/admiravel-mundo-novo-sourced.jpg"
     },
     {
       "title": "*Fly, Wild Swans: My Mother, Myself and China*",
@@ -765,7 +843,7 @@
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/fly-wild-swans-my-mother-myself-and-china-sourced.jpg"
     },
     {
       "title": "The Hitchhiker's Guide to the Galaxy",
@@ -780,7 +858,7 @@
       "rating": null,
       "lastRead": "2026-01-20",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/the-hitchhiker-s-guide-to-the-galaxy-sourced.jpg"
     },
     {
       "title": "Breakneck",
@@ -794,7 +872,7 @@
       "rating": null,
       "lastRead": "2026-01-15",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/breakneck-sourced.jpg"
     },
     {
       "title": "***Perfectly Reasonable Deviations from the Beaten Track***",
@@ -808,7 +886,7 @@
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/perfectly-reasonable-deviations-from-the-beaten-track-sourced.jpg"
     },
     {
       "title": "Peak: Secrets from the New Science of Expertise",
@@ -822,7 +900,7 @@
       "rating": null,
       "lastRead": "2026-02-28",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/peak-secrets-from-the-new-science-of-expertise-sourced.jpg"
     },
     {
       "title": "If Anyone Builds It, Everyone Dies",
@@ -850,7 +928,7 @@
       "rating": null,
       "lastRead": "",
       "note": "",
-      "cover": ""
+      "cover": "assets/library-covers/a-brief-history-of-intelligence-evolution-ai-and-the-five-breakthroughs-tha-sourced.jpg"
     },
     {
       "title": "Christie Malry’s Own Double-Entry",

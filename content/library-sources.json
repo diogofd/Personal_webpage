@@ -1,0 +1,319 @@
+{
+  "updated": "2026-10-13",
+  "note": "Supplementary local thumbnails and bibliographic metadata. Covers remain copyrighted by their respective rights holders. Genre tags are editorial classifications using only Diogo’s existing Notion labels. Existing user metadata and covers are unchanged. Editions identify the work, not necessarily the exact copy read. No reviews, ratings or reading dates were inferred.",
+  "entries": [
+    {
+      "title": "Material World",
+      "cover": "assets/library-covers/material-world-sourced.jpg",
+      "source": "https://www.penguinrandomhouse.com/books/703268/material-world-by-ed-conway/",
+      "coverSource": "https://openlibrary.org/books/OL48265899M",
+      "authors": ["Ed Conway"],
+      "tags": ["Non-fiction", "Economics", "Geography", "Science"]
+    },
+    {
+      "title": "Nexus",
+      "cover": "assets/library-covers/nexus-sourced.jpg",
+      "source": "https://www.ynharari.com/book/nexus/",
+      "coverSource": "https://openlibrary.org/books/OL57761157M",
+      "authors": ["Yuval Noah Harari"],
+      "tags": ["Non-fiction", "History", "AI"]
+    },
+    {
+      "title": "Life is Hard",
+      "cover": "assets/library-covers/life-is-hard-sourced.jpg",
+      "source": "https://www.penguinrandomhouse.com/books/700441/life-is-hard-by-kieran-setiya/",
+      "authors": ["Kieran Setiya"],
+      "tags": ["Non-fiction", "Philosophy"]
+    },
+    {
+      "title": "Isaac Newton",
+      "cover": "assets/library-covers/isaac-newton-sourced.jpg",
+      "source": "https://www.penguinrandomhouse.com/books/60766/isaac-newton-by-james-gleick/",
+      "coverSource": "https://openlibrary.org/books/OL13635950M",
+      "authors": ["James Gleick"],
+      "tags": ["Biography", "Science", "History"]
+    },
+    {
+      "title": "The Bitcoin Standard",
+      "cover": "assets/library-covers/the-bitcoin-standard-sourced.jpg",
+      "source": "https://openlibrary.org/books/OL26950854M"
+    },
+    {
+      "title": "Being Jewish After the Destruction of Gaza",
+      "cover": "assets/library-covers/being-jewish-after-the-destruction-of-gaza-sourced.jpg",
+      "source": "https://openlibrary.org/books/OL62084425M"
+    },
+    {
+      "title": "Co-Intelligence",
+      "cover": "assets/library-covers/co-intelligence-sourced.jpg",
+      "source": "https://openlibrary.org/books/OL50734728M"
+    },
+    {
+      "title": "A Partícula no Fim do Universo",
+      "cover": "assets/library-covers/a-particula-no-fim-do-universo-sourced.jpg",
+      "source": "https://www.gradiva.pt/produto/a-particula-no-fim-do-universo/"
+    },
+    {
+      "title": "Category Theory in Context",
+      "cover": "assets/library-covers/category-theory-in-context-sourced.jpg",
+      "source": "https://store.doverpublications.com/collections/all/products/9780486809038"
+    },
+    {
+      "title": "Mathematics: A Very Short Introduction",
+      "cover": "assets/library-covers/mathematics-a-very-short-introduction-sourced.jpg",
+      "source": "https://openlibrary.org/books/OL7384524M"
+    },
+    {
+      "title": "The Number Mysteries: A Mathematical Odyssey Through  Everyday Life",
+      "cover": "assets/library-covers/the-number-mysteries-a-mathematical-odyssey-through-everyday-life-sourced.jpg",
+      "source": "https://openlibrary.org/books/OL24905987M"
+    },
+    {
+      "title": "Incompletude",
+      "cover": "assets/library-covers/incompletude-sourced.jpg",
+      "source": "https://www.companhiadasletras.com.br/9788535913057-incompletude-1010/p",
+      "editionNote": "Portuguese-language Brazilian edition; exact edition not specified in the reading list."
+    },
+    {
+      "title": "On Freedom",
+      "cover": "assets/library-covers/on-freedom-sourced.jpg",
+      "source": "https://openlibrary.org/books/OL50960298M"
+    },
+    {
+      "title": "Hillbilly Elegy",
+      "cover": "assets/library-covers/hillbilly-elegy-sourced.jpg",
+      "source": "https://openlibrary.org/books/OL57897557M"
+    },
+    {
+      "title": "Who Will Defend Europe",
+      "cover": "assets/library-covers/who-will-defend-europe-sourced.jpg",
+      "source": "https://hurstpublishers.com/book/who-will-defend-europe/"
+    },
+    {
+      "title": "Leadership",
+      "cover": "assets/library-covers/leadership-sourced.jpg",
+      "source": "https://openlibrary.org/books/OL35077086M"
+    },
+    {
+      "title": "The Vegetarian",
+      "cover": "assets/library-covers/the-vegetarian-sourced.jpg",
+      "source": "https://www.penguin.co.in/book/the-vegetarian/"
+    },
+    {
+      "title": "Spies Against Armageddon: Inside Israel's Secret Wars",
+      "cover": "assets/library-covers/spies-against-armageddon-inside-israel-s-secret-wars-sourced.jpg",
+      "source": "https://openlibrary.org/books/OL26125402M",
+      "tags": [
+        "Non-fiction",
+        "Espionage",
+        "Geopolitics"
+      ]
+    },
+    {
+      "title": "The Hour Between Dog and Wolf: Risk Taking, Gut Feelings and the Biology of Boom and Bust",
+      "cover": "assets/library-covers/the-hour-between-dog-and-wolf-risk-taking-gut-feelings-and-the-biology-of-b-sourced.jpg",
+      "source": "https://openlibrary.org/books/OL25223681M",
+      "authors": [
+        "John Coates"
+      ],
+      "tags": [
+        "Non-fiction",
+        "Economics",
+        "Psychology",
+        "Science"
+      ]
+    },
+    {
+      "title": "O Planalto e a Estepe",
+      "cover": "assets/library-covers/o-planalto-e-a-estepe-sourced.jpg",
+      "source": "https://books.google.com/books?id=p9NYckhMTLMC",
+      "authors": [
+        "Pepetela"
+      ],
+      "tags": [
+        "Fiction",
+        "Historical Romance"
+      ]
+    },
+    {
+      "title": "How Much Land Does a Man Need",
+      "cover": "assets/library-covers/how-much-land-does-a-man-need-sourced.jpg",
+      "source": "https://openlibrary.org/books/OL34310731M",
+      "authors": [
+        "Leo Tolstoy"
+      ],
+      "tags": [
+        "Fiction",
+        "Classics",
+        "Short Story"
+      ]
+    },
+    {
+      "title": "O Menino do Dedo Verde",
+      "cover": "assets/library-covers/o-menino-do-dedo-verde-sourced.jpg",
+      "source": "https://openlibrary.org/books/OL61027617M",
+      "authors": [
+        "Maurice Druon"
+      ],
+      "tags": [
+        "Fiction"
+      ]
+    },
+    {
+      "title": "The Mighty and The Almighty: Reflections on America, God, and World Affairs",
+      "cover": "assets/library-covers/the-mighty-and-the-almighty-reflections-on-america-god-and-world-affairs-sourced.jpg",
+      "source": "https://openlibrary.org/books/OL28173677M",
+      "authors": [
+        "Madeleine Albright"
+      ],
+      "tags": [
+        "Non-fiction",
+        "Religion",
+        "Geopolitics",
+        "Politics"
+      ]
+    },
+    {
+      "title": "Debt: The First 5.000 Years",
+      "cover": "assets/library-covers/debt-the-first-5-000-years-sourced.jpg",
+      "source": "https://openlibrary.org/books/OL24088724M",
+      "authors": [
+        "David Graeber"
+      ],
+      "tags": [
+        "Non-fiction",
+        "Economics",
+        "History"
+      ]
+    },
+    {
+      "title": "The Three-Body Problem",
+      "cover": "assets/library-covers/the-three-body-problem-sourced.jpg",
+      "source": "https://academic.macmillan.com/academictrade/9780765382030/thethreebodyproblem/",
+      "authors": [
+        "Cixin Liu"
+      ],
+      "tags": [
+        "Fiction",
+        "SciFi"
+      ]
+    },
+    {
+      "title": "Eric Clapton: an autobigraphy",
+      "cover": "assets/library-covers/eric-clapton-an-autobigraphy-sourced.jpg",
+      "source": "https://openlibrary.org/books/OL25849060M",
+      "authors": [
+        "Eric Clapton"
+      ],
+      "tags": [
+        "Autobiography",
+        "Memoir"
+      ]
+    },
+    {
+      "title": "Fórmula de Deus",
+      "cover": "assets/library-covers/formula-de-deus-sourced.jpg",
+      "source": "https://openlibrary.org/books/OL45155361M",
+      "authors": [
+        "José Rodrigues dos Santos"
+      ],
+      "tags": [
+        "Fiction",
+        "Thriller"
+      ]
+    },
+    {
+      "title": "A Day In the Life of Ivan",
+      "cover": "assets/library-covers/a-day-in-the-life-of-ivan-sourced.jpg",
+      "source": "https://www.penguinrandomhouse.com/books/301716/one-day-in-the-life-of-ivan-denisovich-by-alexander-solzhenitsyn/9780451228147/",
+      "editionNote": "Interpreted the abbreviated reading-list title as One Day in the Life of Ivan Denisovich.",
+      "authors": [
+        "Aleksandr Solzhenitsyn"
+      ],
+      "tags": [
+        "Fiction",
+        "Classics"
+      ]
+    },
+    {
+      "title": "Communist Manifesto",
+      "cover": "assets/library-covers/communist-manifesto-sourced.jpg",
+      "source": "https://www.penguinrandomhouse.com/books/308469/the-communist-manifesto-by-karl-marx-and-friedrich-engels/",
+      "authors": [
+        "Karl Marx",
+        "Friedrich Engels"
+      ],
+      "tags": [
+        "Non-fiction",
+        "Politics",
+        "Philosophy",
+        "Economics"
+      ]
+    },
+    {
+      "title": "The Future of Geography",
+      "cover": "assets/library-covers/the-future-of-geography-sourced.jpg",
+      "source": "https://openlibrary.org/books/OL48183561M",
+      "authors": [
+        "Tim Marshall"
+      ],
+      "tags": [
+        "Non-fiction",
+        "Geopolitics",
+        "Geography"
+      ]
+    },
+    {
+      "title": "Corpse Washer",
+      "cover": "assets/library-covers/corpse-washer-sourced.jpg",
+      "source": "https://openlibrary.org/works/OL17435255W",
+      "authors": [
+        "Sinan Antoon"
+      ],
+      "tags": [
+        "Fiction",
+        "Contemporary"
+      ]
+    },
+    {
+      "title": "Inadequate Equilibria: Where and How Civilizations Get Stuck",
+      "cover": "assets/library-covers/inadequate-equilibria-where-and-how-civilizations-get-stuck-sourced.jpg",
+      "source": "https://openlibrary.org/books/OL32213342M"
+    },
+    {
+      "title": "Admiravel mundo novo",
+      "cover": "assets/library-covers/admiravel-mundo-novo-sourced.jpg",
+      "source": "https://openlibrary.org/books/OL9157038M"
+    },
+    {
+      "title": "*Fly, Wild Swans: My Mother, Myself and China*",
+      "cover": "assets/library-covers/fly-wild-swans-my-mother-myself-and-china-sourced.jpg",
+      "source": "https://books.google.com/books/about/Fly_Wild_Swans.html?id=2s5W0QEACAAJ"
+    },
+    {
+      "title": "The Hitchhiker's Guide to the Galaxy",
+      "cover": "assets/library-covers/the-hitchhiker-s-guide-to-the-galaxy-sourced.jpg",
+      "source": "https://openlibrary.org/books/OL32838419M"
+    },
+    {
+      "title": "Breakneck",
+      "cover": "assets/library-covers/breakneck-sourced.jpg",
+      "source": "https://openlibrary.org/books/OL57551637M"
+    },
+    {
+      "title": "***Perfectly Reasonable Deviations from the Beaten Track***",
+      "cover": "assets/library-covers/perfectly-reasonable-deviations-from-the-beaten-track-sourced.jpg",
+      "source": "https://openlibrary.org/books/OL3391618M"
+    },
+    {
+      "title": "Peak: Secrets from the New Science of Expertise",
+      "cover": "assets/library-covers/peak-secrets-from-the-new-science-of-expertise-sourced.jpg",
+      "source": "https://openlibrary.org/books/OL26428783M"
+    },
+    {
+      "title": "**A Brief History of Intelligence: Evolution, AI, and the Five Breakthroughs That Made Our Brains**",
+      "cover": "assets/library-covers/a-brief-history-of-intelligence-evolution-ai-and-the-five-breakthroughs-tha-sourced.jpg",
+      "source": "https://www.harperlibrarybookclub.com/9780063286351/a-brief-history-of-intelligence/?isbn=9780063286375"
+    }
+  ]
+}

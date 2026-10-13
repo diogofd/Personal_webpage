@@ -93,6 +93,8 @@ The snapshot includes titles, authors, tags, ratings, last-read dates, and one-l
 
 Notion remains the editing source. Refresh the approved snapshot and publish to update the website; this is not an automatic/live Notion connection. Search runs only in the browser against the already-rendered list. Without JavaScript, all books remain readable.
 
+Missing cover art and bibliographic fields have also been supplemented from catalogues and publisher pages. `content/library-sources.json` records those sources and edition notes. Genre tags are editorial classifications drawn only from the existing Notion label set. These additions live in the website snapshot, not in Notion. Preserve them when refreshing from Notion if its corresponding fields are still empty; a non-empty Notion value takes precedence. No ratings, reading dates, reviews, or reading status have been inferred.
+
 ## Hosting and your domain
 
 `dist/` contains the complete deployable website. Copy its contents to any static web host. The project has no Sites-specific runtime dependency.
