@@ -91,9 +91,40 @@ With `npm run dev` running, saving an essay updates its notes and preview automa
 
 The snapshot includes titles, authors, tags, ratings, last-read dates, and one-liners from Diogo’s Book Reviews in Notion. It does not contain full reviews, page bodies, temporary file URLs, or access credentials. Empty fields are omitted in the page; undated books are not labelled read or currently reading. Empty untitled rows and placeholder one-liners such as `TBD` are excluded. Cover artwork remains the property of its respective rights holders.
 
-Notion remains the editing source. Refresh the approved snapshot and publish to update the website; this is not an automatic/live Notion connection. Search runs only in the browser against the already-rendered list. Without JavaScript, all books remain readable.
+Notion remains the editing source. Run `npm run sync:library` to refresh the approved snapshot (setup below), then publish to update the website. This is not an automatic/live Notion connection. Search runs only in the browser against the already-rendered list. Without JavaScript, all books remain readable.
 
 Missing cover art and bibliographic fields have also been supplemented from catalogues and publisher pages. `content/library-sources.json` records those sources and edition notes. Genre tags are editorial classifications drawn only from the existing Notion label set. These additions live in the website snapshot, not in Notion. Preserve them when refreshing from Notion if its corresponding fields are still empty; a non-empty Notion value takes precedence. No ratings, reading dates, reviews, or reading status have been inferred.
+
+### Sync the Library from Notion
+
+One-time setup:
+
+1. Create an internal Notion connection for your workspace, with **Read content** only: https://www.notion.com/help/create-integrations-with-the-notion-api.
+2. In the original Diogo's Book Reviews database, use Connections to add that connection. Do not make the database public.
+3. Run `cp -n .env.example .env.local`, then edit `.env.local` and paste the connection token after `NOTION_TOKEN=`. The data-source ID is already filled in. Keep this file private; `.gitignore` excludes it. Environment variables can be used instead and take precedence.
+
+Whenever you edit Notion:
+
+```sh
+npm run sync:library
+```
+
+Run `npm run dev` in another terminal to see the local preview update after the sync. Without the dev server, run `npm run build` and `npm run check`. The sync does not commit, push, publish, write to Notion, or continuously poll it. Publishing remains a separate step.
+
+How `sync-library.cjs` works:
+
+- `settings` loads just two settings from the ignored `.env.local` file. No shell evaluation or token logging.
+- `pages` checks the column types, requests only Name, Author, Tags, Rating, Last Read, One-liner, and Cover Image, and follows pagination until the whole database has been read. It never requests page bodies. If you rename columns, update `FIELDS` at the top of the script.
+- `bookFromPage` creates a new object containing only the approved public fields. Non-empty Notion authors and tags win; empty ones use `library-sources.json`. Blank ratings/dates/one-liners clear those fields, not preserve stale values. `TBD` is hidden.
+- `coverBytes` downloads the first Cover Image attachment. A blank property uses a curated supplementary cover, if available. Cover links must be direct public HTTPS URLs (no redirects), JPEG/PNG/WebP/GIF, and at most 8 MB. No Notion token is sent to image servers. Images keep their original encoding/resolution; no image-processing dependency is needed. Use reasonably small uploads. File hashes make identical images reusable and changed images get new filenames.
+- `sync` prepares everything in the ignored `.library-sync/` directory, then installs covers and atomically replaces `content/library.json`. A failed API request, cover download, or validation leaves the previous snapshot intact. A disk error during final installation may leave harmless unreferenced new cover files. Existing covers are never deleted or overwritten. Removed/archived/untitled Notion rows disappear from the next successful snapshot; an entirely empty export is rejected as a safety check.
+- `.library-sync/library.previous.json` keeps the preceding snapshot. `.library-sync/state.json` privately remembers stable Notion page IDs, so supplements follow title changes after the first sync. Before that first sync, titles must match the existing supplement titles. Keep this directory locally; it is ignored by Git and never served. Duplicate titles are rejected rather than incorrectly merging books. There is a lock to prevent simultaneous syncs.
+
+Edit `content/library-sources.json` to change our fallback authors/tags/covers; do not treat `library.json` as permanent manual overrides, since the next sync regenerates it. The script does not search for missing covers or invent metadata for new books.
+
+Review changes with `git diff -- content/library.json` before committing. Only commit the public snapshot, needed cover assets, and intentional source changes—not `.env.local` or `.library-sync/`.
+
+`npm run test:sync` runs offline tests with fake API responses and temporary files. No credentials or network needed. A real API run requires your own read-only token.
 
 ## Hosting and your domain
 

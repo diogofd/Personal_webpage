@@ -21,7 +21,7 @@ const client = `(() => {
 
 function start(root = __dirname, port = Number(process.env.PORT || 4173)) {
   const output = path.join(root, 'dist');
-  const types = {'.html':'text/html; charset=utf-8', '.css':'text/css', '.js':'text/javascript', '.png':'image/png', '.svg':'image/svg+xml', '.woff2':'font/woff2', '.woff':'font/woff', '.ttf':'font/ttf', '.pdf':'application/pdf'};
+  const types = {'.html':'text/html; charset=utf-8', '.css':'text/css', '.js':'text/javascript', '.jpg':'image/jpeg', '.png':'image/png', '.webp':'image/webp', '.gif':'image/gif', '.svg':'image/svg+xml', '.woff2':'font/woff2', '.woff':'font/woff', '.ttf':'font/ttf', '.pdf':'application/pdf'};
   let revision = 0;
   function build() {
     const result = spawnSync(process.execPath, [path.join(root, 'build.cjs')], {cwd:root, stdio:'inherit'});
