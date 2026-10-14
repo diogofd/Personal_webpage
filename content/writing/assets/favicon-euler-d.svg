@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <title>Euler Script D</title>
+  <!-- D outline from AMS Euler Script Medium (eusm10), version 003.003.
+       Copyright (c) 1997, 2009, 2011 American Mathematical Society.
+       SIL Open Font License 1.1; see licenses/euler-script-OFL.txt. -->
+  <rect width="32" height="32" rx="6" fill="#17191c"/>
+  <path fill="#e69c97" transform="translate(4 28) scale(.033707865 -.033707865) translate(-52 -4)" d="M371 716 310 685C209 678 52 624 52 490C52 456 63 426 90 426C116 426 130 450 130 473C130 495 123 512 123 534C123 621 237 656 310 656V347C310 271 312 169 265 120C224 78 169 54 112 54L84 4H375C587 4 764 179 764 392C764 566 679 688 378 688V712ZM285 101C364 185 378 310 378 422V656C461 656 560 644 618 587C670 535 691 459 691 387C691 254 652 111 515 68C470 54 422 54 375 54H253L250 64Z"/>
+</svg>
