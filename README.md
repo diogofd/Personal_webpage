@@ -9,6 +9,7 @@ A small, portable static website. No framework, database, account system, or bro
 | Introduction and advisors | `content/about.md` |
 | Name, profile links, papers, talks, training events | `content/site.json` |
 | Essays | `content/writing/*.md` |
+| Notes | `content/notes/*.md` and `assets/notes/` |
 | Closing symbols and their families | `content/endmarks.json` |
 | Portrait | `assets/personal.png` |
 | Typography, colours, spacing | `assets/style.css` |
@@ -130,7 +131,9 @@ Review changes with `git diff -- content/library.json` before committing. Only c
 
 `dist/` contains the complete deployable website. Copy its contents to any static web host. The project has no Sites-specific runtime dependency.
 
-For Sites, `.openai/hosting.json` holds this project's hosting identity. Ask Codex/Sites to build and publish the updated project. Sites has its own source mirror; storing the same project on GitHub does **not** establish automatic deployment from arbitrary GitHub pushes.
+GitHub `main` in [diogofd/Personal_webpage](https://github.com/diogofd/Personal_webpage) is the shared source of truth. Start changes from that branch, run `npm run build` and `npm run check`, and merge the changes on GitHub.
+
+For Sites, `.openai/hosting.json` holds the hosting identity. Publish from the merged GitHub source. Sync that source and its build output into the existing Sites mirror, then save and deploy the Sites version. Keep the GitHub and Sites histories separate. GitHub pushes currently do not trigger a Sites deployment.
 
 For GitHub Pages, deploy the contents of `dist/` using a Pages workflow. Relative asset and navigation paths also work under a repository subpath. Other static hosts can serve the same folder.
 

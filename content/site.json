@@ -62,6 +62,21 @@
         { "label": "Notes & slides", "url": "https://diogofd.github.io/Seminar-on-Higher-Categories/lectures/" },
         { "label": "Seminar website", "url": "https://diogofd.github.io/Seminar-on-Higher-Categories/" }
       ]
+    },
+    {
+      "year": "2022",
+      "title": "Higher Categories and Contractibility as Uniqueness",
+      "venue": "Lisbon Mathematics Graduate Student Seminar",
+      "resources": [
+        {
+          "label": "Seminar notes",
+          "note": "contractibility-as-uniqueness"
+        },
+        {
+          "label": "Complete Segal Spaces companion",
+          "note": "complete-segal-spaces"
+        }
+      ]
     }
   ],
   "researchVisits": "University of Zurich, with Alberto Cattaneo’s group; University of Edinburgh, with David Jordan and Clark Barwick’s group.",
