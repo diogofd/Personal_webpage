@@ -53,16 +53,51 @@ const essays = fs.readdirSync(path.join(__dirname, 'content/writing')).filter(f 
   return { ...meta, slug };
 }).filter(Boolean).sort((a,b) => b.date.localeCompare(a.date));
 const writing = essays.map(e => '<article class="paper"><div class="year">' + escape(e.date.slice(0,4)) + '</div><div><h3><a href="writing/' + e.slug + '/">' + escape(e.title) + '</a></h3><p class="authors">' + escape(e.summary) + '</p><p class="metadata">' + escape(e.context || '') + '</p><a class="resource" href="writing/' + e.slug + '/">Read essay</a></div></article>').join('');
+fs.rmSync(path.join(out, 'notes'), { recursive: true, force: true });
+const noteFiles = fs.readdirSync(path.join(__dirname, 'content/notes'))
+  .filter(file => file.endsWith('.md'));
+const notes = noteFiles.map(file => {
+  const match = read('content/notes/' + file).match(/^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/);
+  if (!match) throw new Error(file + ': add JSON metadata between --- lines.');
+  const meta = JSON.parse(match[1]);
+  const slug = file.slice(0, -3);
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) throw new Error('Invalid note filename: ' + file);
+  const body = markdown.render(match[2]);
+  if (body.includes('katex-error')) throw new Error('Math failed in ' + file);
+  write('notes/' + slug + '/index.html', page(meta.title + ' · ' + site.name, meta.summary,
+    '<main class="essay"><a class="back" href="../../#notes">Back to notes</a><div class="essay-heading">' +
+    '<p class="metadata">' + escape(meta.context) + '</p><h1>' + escape(meta.title) + '</h1>' +
+    '<p class="byline">' + escape(site.name) + '</p></div><article class="prose">' + body + '</article>' +
+    '<script defer src="../../assets/margin-notes.js"></script>' +
+    (meta.note ? '<p class="original-note">' + escape(meta.note) + '</p>' : '') + '</main>', '../../', 'notes/' + slug + '/'));
+  return { ...meta, slug, href: 'notes/' + slug + '/', label: 'Read note' };
+});
+const hopf = {
+  title: 'Hopf Algebras',
+  summary: 'Notes on coalgebras, bialgebras, Hopf algebras, actions and coactions, and the Yang–Baxter equation.',
+  context: 'Original manuscript · 41 pages',
+  href: 'assets/notes/hopf-algebras.pdf',
+  label: 'Read PDF',
+};
+const noteOrder = ['simplicial-sets-primer', 'complete-segal-spaces', 'contractibility-as-uniqueness'];
+const notePosition = note => noteOrder.includes(note.slug) ? noteOrder.indexOf(note.slug) : noteOrder.length;
+const orderedNotes = [hopf, ...notes.sort((a, b) => notePosition(a) - notePosition(b) || a.title.localeCompare(b.title))];
+const featuredNotes = orderedNotes.map(e =>
+  '<article class="paper"><div class="year">' + (e.slug ? 'HTML' : 'PDF') + '</div><div><h3><a href="' + escape(e.href) + '">' +
+  escape(e.title) + '</a></h3><p class="authors">' + escape(e.summary) + '</p><p class="metadata">' +
+  escape(e.context) + '</p><a class="resource" href="' + escape(e.href) + '">' +
+  escape(e.label) + '</a></div></article>').join('');
 const publications = site.publications.map(p => '<article class="paper"><div class="year">' + escape(p.year) + '</div><div><h3>' + link(p.title,p.url) + '</h3><p class="authors">' + escape(p.authors) + '</p><p class="metadata">' + escape(p.description) + '</p>' + (p.url ? link(p.linkLabel || 'Read',p.url,'resource') : '') + '</div></article>').join('');
 const talks = site.talks.map(t => {
-  const resources = '<div class="resources">' + (t.resources || []).map(r => link(r.label,r.url,'resource')).join('') + '</div>';
+  const resources = '<div class="resources">' + (t.resources || []).map(r => r.note ? '<a class="resource" href="notes/' + escape(r.note) + '/">' + escape(r.label) + '</a>' : link(r.label,r.url,'resource')).join('') + '</div>';
   return '<div class="activity"><span class="year">' + escape(t.year) + '</span><div><h3>' + link(t.title,t.url) + '</h3><p>' + escape(t.venue) + '</p>' +
     (t.abstract ? '<details class="abstract"><summary>Abstract</summary><div class="abstract-copy"><p>' + escape(t.abstract) + '</p>' + resources + '</div></details>' : resources) + '</div></div>';
 }).join('');
 const training = site.training.map(t => '<li>' + link(t.title,t.url) + ' · ' + escape(t.venue) + '</li>').join('');
 const home = '<main><section class="intro"><img class="portrait" src="' + escape(site.portrait) + '" alt="Portrait of ' + escape(site.name) + '" width="112" height="112"><div class="identity"><h1>' + escape(site.name) + '</h1>' +
   '<div class="social" aria-label="Profile links">' + site.links.map(l => link(l.label,l.url)).join('') + '</div></div><div class="bio">' + markdown.render(read('content/about.md')) + '</div></section>' +
-  '<section id="writing"><div class="section-title"><h2>Recent writing</h2></div>' + (writing || '<p class="metadata">Nothing published here yet.</p>') + '</section>' +
+  '<section id="writing"><div class="section-title"><h2>Selected Writings</h2></div>' + (writing || '<p class="metadata">Nothing published here yet.</p>') + '</section>' +
+  '<section id="notes"><div class="section-title"><h2>Notes</h2></div>' + featuredNotes + '</section>' +
   '<section id="papers"><div class="section-title"><h2>Publications &amp; preprints</h2></div>' + publications + '</section>' +
   '<section class="activities"><div class="section-title"><h2>Teaching &amp; talks</h2></div>' + talks +
   '<details class="more-phd"><summary>More from my PhD</summary><div class="more"><p><strong>Research visits.</strong> ' + escape(site.researchVisits) + '</p><p><strong>Seminars.</strong> ' + markdown.renderInline(site.seminars) +
